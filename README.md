@@ -1,3 +1,6 @@
+Reffer to https://dev.to/javascripterika/deploy-a-react-app-as-a-github-user-page-with-yarn-3fka
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
