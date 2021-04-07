@@ -37,7 +37,7 @@ export default function AppAbout() {
           <div id="sectionTitle">Selected Projects</div>
           <AnimateSharedLayout type="crossfade">
               <Router>
-                  <Route path={["/about/:id", "/about"]} component={Store} />
+                  <Route exact path={["/about/:id", "/about"]} component={Store} />
               </Router>
           </AnimateSharedLayout>
       </div>

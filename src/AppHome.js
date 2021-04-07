@@ -102,9 +102,9 @@ function AppHome() {
   const classes = useStyles();
   return (
     <div id="root" className="App">
-      <div id="background">
+      {/* <div id="background">
         <div id="threejsCanvas"><CanvasBGWhite></CanvasBGWhite></div>
-      </div>
+      </div> */}
       
       <div className="content" >
         <div className="section" id="home">

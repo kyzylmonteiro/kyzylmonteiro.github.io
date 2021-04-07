@@ -95,6 +95,15 @@ background: #f0f0f0;
       margin: 10px;
       pointer-events: all;
     }
+    @-moz-document url-prefix(){
+      #contactButton{
+        background: rgba( 255, 255, 255, 0.75 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
+        color:#ec644b;
+        margin: 10px;
+        pointer-events: all;
+      }
+    }
     
     #projects{
         z-index: 10;

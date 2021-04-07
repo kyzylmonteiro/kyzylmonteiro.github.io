@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
     const classes = useStyles();  
+    const [b,setB] = useState(true);
   return (
     <Router>
         <div id="nav">
@@ -37,13 +38,13 @@ export default function App() {
                     <Typography variant="h6" className={classes.title}>
                     Kyzyl Monteiro
                     </Typography>
-                    <Button style={{color: '#ec644b'}} component={Link} to="/">Home</Button>
-                    <Button style={{color: '#ec644b'}} component={Link} to="/about">About</Button>
-                    <Button style={{color: '#ec644b'}} component={HashLink} to="/about#projects">Projects</Button>
+                    <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(true)} component={Link} to="/">Home</Button>
+                    <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(false)} component={Link} to="/about">About</Button>
+                    <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(false)} component={HashLink} to="/about#projects">Projects</Button>
                 </Toolbar>
             </AppBar>
         </div>
-        <div id="backgroundNoPointer">
+        <div id={b ? "background" : "backgroundNoPointer"}>
             <div id="threejsCanvas"><CanvasBGWhite></CanvasBGWhite></div>
         </div>
         {/* <nav>
@@ -62,10 +63,10 @@ export default function App() {
        {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
+          <Route exact path="/about">
             <AppAbout />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <AppHome />
           </Route>
         </Switch>
