@@ -14,6 +14,7 @@ import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import CanvasBGWhite from './CanvasBGWhite';
 import { HashLink } from 'react-router-hash-link'
+import "./App.css"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,11 +37,12 @@ export default function App() {
             <AppBar style={{ background: 'rgba( 255, 255, 255, 0.15 )',    boxShadow: 'none', border:"none", backdropFilter: 'blur( 5.0px )' }}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                    Kyzyl Monteiro
+                     
                     </Typography>
                     <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(true)} component={Link} to="/">Home</Button>
                     <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(false)} component={Link} to="/about">About</Button>
                     <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} onClick={()=>setB(false)} component={HashLink} to="/about#projects">Projects</Button>
+                    <Button style={{color: "white", backgroundColor: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold", margin:"10px"}} href="http://bit.ly/kyzylsresume">Resume</Button>
                 </Toolbar>
             </AppBar>
         </div>
