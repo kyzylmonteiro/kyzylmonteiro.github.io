@@ -1,62 +1,62 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import CanvasBGWhite from './CanvasBGWhite';
-import React, { useState, useEffect, useRef } from "react";
+// import BubblyBG from './BubblyBG';
+import React, { useState, useEffect} from "react";
 import Fab from '@material-ui/core/Fab';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ProjectCard from"./ProjectCard";
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
+// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+// import ProjectCard from"./ProjectCard";
+// import Grid from '@material-ui/core/Grid';
+// import { makeStyles } from '@material-ui/core/styles';
 // import * as Scroll from 'react-scroll';
 // import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 // var Scroll = require('react-scroll');
 // var scroll = Scroll.animateScroll;
-import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 // import { Header } from "./Header";
-import { Item } from "./Item";
-import { List } from "./List";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+// import { Item } from "./Item";
+// import { List } from "./List";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
+// import InstagramIcon from '@material-ui/icons/Instagram';
+// import FacebookIcon from '@material-ui/icons/Facebook';
 
-function Store({ match }) {
-  let { id } = match.params;
-  const imageHasLoaded = true;
+// function Store({ match }) {
+//   let { id } = match.params;
+//   const imageHasLoaded = true;
 
-  return (
-    <>
-      <List selectedId={id} />
-      <AnimatePresence>
-        {id && imageHasLoaded && <Item id={id} key="item" />}
-      </AnimatePresence>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <List selectedId={id} />
+//       <AnimatePresence>
+//         {id && imageHasLoaded && <Item id={id} key="item" />}
+//       </AnimatePresence>
+//     </>
+//   );
+// }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//   },
+//   menuButton: {
+//     marginRight: theme.spacing(2),
+//   },
+//   title: {
+//     flexGrow: 1,
+//   },
+// }));
 
 
 
 function AppHome() {
-  const prevScrollY = useRef(0);
-  const [goingUp, setGoingUp] = useState(false);
+  // const prevScrollY = useRef(0);
+  const [goingUp] = useState(false);
 
   useEffect(() => {
       
@@ -99,7 +99,7 @@ function AppHome() {
 
     }, [goingUp]);
     
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <div id="root" className="App">
       {/* <div id="background">
@@ -109,9 +109,8 @@ function AppHome() {
       <div className="content" >
         <div className="section" id="home">
           <div id="name">
-            Kyzyl Monteiro
             <div id="tag">
-              Creative Developer & HCI Researcher
+            Hi, I am Kyzyl Monteiro, a creative technology enthusiast.<br/> I enjoy studying, designing, and developing interactive and immersive technology.
             </div>
             <Fab id="contactButton" href="https://www.youtube.com/channel/UCYOqw_ae8clkq_LSxUeOq0Q" target="_blank" aria-label="yt">
               <YouTubeIcon />

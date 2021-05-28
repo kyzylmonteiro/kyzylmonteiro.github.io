@@ -10,7 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+// import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,6 +19,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 const useStyles = makeStyles({
   rootCard: {
     pointerEvents: 'all',
+    cursor: "inherit",
     background: 'rgba( 255, 255, 255, 0.15 )',
     boxShadow: '0 0 32px 0 rgba( 31, 38, 135, 0.20 )',
     backdropFilter: 'blur( 5.0px )',

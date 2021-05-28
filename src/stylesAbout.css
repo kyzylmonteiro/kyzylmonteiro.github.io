@@ -24,6 +24,7 @@
     /* display: flex; */
     justify-content: center;
     pointer-events: auto;
+    cursor: inherit ;
   }
   
   .screen {
@@ -69,6 +70,10 @@
     height: 40px;
   }
   
+  .hlink{
+    cursor: inherit;
+  }
+
   ul,
   li {
     list-style: none;
@@ -110,9 +115,11 @@
     position: relative;
     display: block;
     pointer-events: none;
+    cursor: inherit ;
   }
   
   .card-content-container.open {
+    cursor: inherit ;
     top: 0;
     left: 0;
     right: 0;
@@ -124,6 +131,7 @@
   
   .card-content {
     pointer-events: auto;
+    cursor: inherit ;
     position: relative;
     border-radius: 20px;
     background: rgba( 255, 255, 255, 0.15 );
@@ -140,6 +148,7 @@
   @-moz-document url-prefix(){
     .card-content{
       pointer-events: auto;
+      cursor: inherit ;
       position: relative;
       border-radius: 20px;
       background: rgba( 255, 255, 255, 0.85 );
@@ -159,15 +168,18 @@
     width: auto;
     overflow-y: scroll;
     pointer-events: all;
+    cursor: inherit ;
     scrollbar-width: none;
   }
 
   .open .card-content::-webkit-scrollbar {
     width: 1px;
+    cursor: inherit ;
   }
   
   .card-open-link {
     position: absolute;
+    cursor: inherit ;
     top: 0;
     left: 0;
     right: 0;
@@ -230,6 +242,7 @@
   .overlay a {
     display: block;
     position: fixed;
+    cursor: inherit ;
     top: 0;
     bottom: 0;
     width: 100vw;
@@ -290,7 +303,7 @@
   /* -------------------------------------- */
 
   @media screen and (min-width: 601px) {
-      #sectionTitle{
+      .sectionTitle{
         padding-top: 20vh;
         padding-bottom: 5vh;
         position: relative;
@@ -303,7 +316,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    #sectionTitle{
+    .sectionTitle{
       padding-top: 25vh;
       padding-bottom: 5vh;
       position: relative;
@@ -320,6 +333,7 @@
   height: 100%;
   position: absolute;
   pointer-events: none;
+  cursor: inherit ;
 }
 
 /* .card-image{
@@ -346,7 +360,7 @@
 #abtCard {
   position: relative;
   border-radius: 20px;
-  background: rgba( 255, 255, 255, 0.15 );
+  background: rgba( 255, 255, 255, 0.05 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 9.0px );
   -webkit-backdrop-filter: blur( 9.0px );
@@ -363,7 +377,7 @@
   #abtCard {
     position: relative;
   border-radius: 20px;
-  background: rgba( 255, 255, 255, 0.85 );
+  background: rgba( 255, 255, 255, 0.70 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   overflow: hidden;
@@ -374,15 +388,6 @@
   line-height: 150%;
   }
 }
-
-#abtImg {
-  max-width:20vw;
-  width:35%;
-  margin:3%;
-  border-radius:20px;
-  float:right;
-}
-
 
 #abtCard a{
   text-decoration: none;
@@ -416,10 +421,11 @@
   flex-direction: column;
   align-items:center;
   pointer-events: auto;
+  cursor: inherit ;
 }
 
 
-@media screen and (max-width: 1950px) {
+@media screen and (min-width: 600px) {
   .abtContainer {
     width: 50vw;
     height: 80%;
@@ -429,7 +435,7 @@
   #abtCard {
     position: relative;
     border-radius: 20px;
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.0px );
     -webkit-backdrop-filter: blur( 9.0px );
@@ -457,16 +463,16 @@
     }
   }
   #abtImg {
-    max-width:20vw;
-    width:35%;
-    margin:4%;
+    max-width:12vw;
+    /* width:35%; */
+    margin-left:4%;
     border-radius:20px;
     float:right;
   }
   
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .abtContainer {
     width: 80vw;
     height: auto;
@@ -474,9 +480,10 @@
     padding: 45px 25px;
   }
   #abtCard {
+    padding: 5%;
     position: relative;
     border-radius: 20px;
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.0px );
     -webkit-backdrop-filter: blur( 9.0px );
@@ -491,7 +498,7 @@
     #abtCard {
       position: relative;
       border-radius: 20px;
-      background: rgba( 255, 255, 255, 0.85 );
+      background: rgba( 255, 255, 255,  0.70 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
       /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
       overflow: hidden;
@@ -503,10 +510,8 @@
   }
   
   #abtImg {
-    transform:translateY(0);
-    max-width:20vw;
-    width:35%;
-    margin:4%;
+    width: 86%;
+    margin: 6%;
     border-radius:20px;
     float:right;
   }

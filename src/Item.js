@@ -1,13 +1,13 @@
 import {React, useState} from "react";
 import { motion } from "framer-motion";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 import { Link } from "react-router-dom";
 import { items } from "./data";
 import YoutubeEmbed from "./YoutubeEmbed";
 import Fab from '@material-ui/core/Fab';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SubjectIcon from '@material-ui/icons/Subject';
-import ClearIcon from '@material-ui/icons/Clear';
+// import ClearIcon from '@material-ui/icons/Clear';
 import BookIcon from '@material-ui/icons/Book';
 
 export function Item({ id }) {
@@ -42,22 +42,22 @@ export function Item({ id }) {
             <span className="title">{title}</span>
           </motion.div>
           <motion.div className="content-container" animate>
-            {video==true && <YoutubeEmbed embedId={yt} />}
-            {detailsToggle==true &&  <p>{details}</p>}
+            {video===true && <YoutubeEmbed embedId={yt} />}
+            {detailsToggle===true &&  <p>{details}</p>}
             
           </motion.div>
-          {video==false && 
-              <Fab id="ytbutton" onClick={()=> {setVideo(!video); setDetailsToggle(false)}} style={{display: yt ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px"}}  aria-label="play">
+          {video===false && 
+              <Fab id="ytbutton" onClick={()=> {setVideo(!video); setDetailsToggle(false)}} style={{display: yt ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px", cursor: "inherit"}}  aria-label="play">
                 <PlayArrowIcon />
               </Fab>
             }
-            {detailsToggle==false &&  
-              <Fab id="dtbutton" onClick={()=> {setDetailsToggle(!detailsToggle); setVideo(false)}} style={{display: details ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px"}}  aria-label="description">
+            {detailsToggle===false &&  
+              <Fab id="dtbutton" onClick={()=> {setDetailsToggle(!detailsToggle); setVideo(false)}} style={{display: details ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px", cursor: "inherit"}}  aria-label="description">
                 <SubjectIcon />
               </Fab>
             }
             {report!=null &&  
-              <Fab id="rbutton" href={report} target="_blank" style={{display: report ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px"}}  aria-label="description">
+              <Fab id="rbutton" href={report} target="_blank" style={{display: report ? "inline-flex" : "none", backgroundColor: '#ec644b', color:'white', float:"right", margin: "2px", cursor: "inherit"}}  aria-label="description">
                 <BookIcon />
               </Fab>
             }
