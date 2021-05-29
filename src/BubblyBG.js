@@ -56,6 +56,13 @@ function Swarm({ count, mouse }) {
           particle.my += quad * Math.sign((state.mouse.y * state.viewport.height/2) - (particle.my)) * ((state.mouse.y * state.viewport.height/2) - (particle.my)+100)/200 
         }
 
+        if ( ((( particle.mx)* (particle.mx)) + ((particle.my )*( particle.my)) )<= 50*50 )
+        {
+          // console.log( particle.mx, state.mouse.x, state.viewport.width/2, state.mouse.x * state.viewport.width/2)
+          particle.mx += quad * Math.sign(0  - (particle.mx)) * (0  - (particle.mx)+100)/200 
+          particle.my += quad * Math.sign(0 - (particle.my)) * (0 - (particle.my)+100)/200
+        }
+
         // Boundaries
         if ( ((particle.my/state.viewport.height)*2 <= -0.7 ) || ((particle.mx/state.viewport.width)*2 <= -0.7 ))
         {

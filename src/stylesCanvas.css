@@ -30,7 +30,7 @@ position: fixed;
 overflow: hidden;
 overscroll-behavior-y: none;
 /* font-family: 'Krona One', sans-serif; */
-color: black;
+color: #343434;
 background: #f0f0f0;
 /* cursor: grab; */
 }
@@ -70,7 +70,7 @@ background: #f0f0f0;
         position: relative;
         font-family: 'Krona One', sans-serif;
         font-size: 50px;
-        color: #ec644b;
+        color: #343434;
         text-align: center;
         font-weight: bold;
     }
@@ -94,7 +94,7 @@ background: #f0f0f0;
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
       backdrop-filter: blur( 9.0px );
       -webkit-backdrop-filter: blur( 9.0px );
-      color:#ec644b;
+      color: #343434;
       margin: 10px;
       pointer-events: all;
       cursor: inherit;
@@ -103,7 +103,7 @@ background: #f0f0f0;
       #contactButton{
         background: rgba( 255, 255, 255, 0.75 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
-        color:#ec644b;
+        color:#343434;
         margin: 10px;
         pointer-events: all;
         cursor: inherit ;
@@ -130,7 +130,7 @@ background: #f0f0f0;
         position: relative;
         font-family: 'Krona One', sans-serif;
         font-size: 10vw;
-        color: #ec644b;
+        color: #343434;
         text-align: left;
         font-weight: bold;
     }
@@ -138,7 +138,7 @@ background: #f0f0f0;
         font-size: 7vw;
         line-height: 160%;
         font-weight: normal;
-        font-family: 'Jura', sans-serif;
+        font-family: 'Krona One', sans-serif;
     }
     #nxtbutton{
         margin-top: 30vh;
@@ -153,7 +153,7 @@ background: #f0f0f0;
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
       backdrop-filter: blur( 9.0px );
       -webkit-backdrop-filter: blur( 9.0px );
-      color:#ec644b;
+      color:#343434;
       margin: 10px;
       pointer-events: all;
       cursor: inherit ;

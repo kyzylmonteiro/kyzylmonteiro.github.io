@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Jura&display=swap');
 /* @import 'node_modules/react-modal-video/scss/modal-video.scss'; */
 .App {
-    font-family: sans-serif;
+    font-family: 'Krona One', serif;
+    font-family: 'Jura', sans-serif;
     text-align: center;
   }
   
@@ -208,10 +209,11 @@
   }
 
   .title {
-    font-family: 'Krona One', sans-serif;
-    color: #ec644b;
+    font-family: 'Jura', sans-serif;
+    color: #343434;
     margin: 8px 0;
-    font-size: 1.25em;
+    font-size: 17px;
+    font-weight: bold;
     display: block;
   }
   
@@ -222,7 +224,7 @@
   
   .category {
     color: #ec644b;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Jura', sans-serif;
     text-transform: uppercase;
   }
@@ -258,8 +260,8 @@
   }
   
   p {
-    color: #9d9ca1;
-    font-size: 20px;
+    color: #343434;
+    font-size: 17px;
     line-height: 28px;
   }
   
@@ -371,6 +373,7 @@
   margin: 0 auto;
   display: inline-block;
   line-height: 150%;
+  color: #343434;
 }
 
 @-moz-document url-prefix(){
@@ -392,7 +395,7 @@
 #abtCard a{
   text-decoration: none;
   /* padding-bottom: 1px;
-  border-color: black;
+  border-color: #343434;
   border-bottom-style: dotted;
   border-bottom-width: 2px; */
   color: #ec644b;
@@ -516,3 +519,21 @@
     float:right;
   }
 }
+
+
+/* .card-image-container:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.6) 100%);
+  
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.6) 100%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.6) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1 );
+} */
