@@ -45,7 +45,7 @@ export default function App() {
                     {/* <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold"}} >Home</Button> */}
                     <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold", cursor: "inherit"}} onClick={()=>setB(false)} component={HashLink} to="/about#me">About</Button>
                     <Button style={{color: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold", cursor: "inherit"}} onClick={()=>setB(false)} component={HashLink} to="/about#projects">Projects</Button>
-                    <Button style={{color: "white", backgroundColor: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold", margin:"10px", cursor: "inherit"}} href="http://bit.ly/kyzylsresume">Resume</Button>
+                    <Button style={{color: "white", backgroundColor: '#ec644b', fontFamily: "'Jura', sans-serif", fontWeight: "bold", margin:"10px", cursor: "inherit"}} href="http://bit.ly/kyzyl_resume">Resume</Button>
                 </Toolbar>
             </AppBar>
         </div>
