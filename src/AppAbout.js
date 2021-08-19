@@ -29,7 +29,7 @@ export default function AppAbout() {
             <img src="images\decentPicKyzyl.jpeg" alt="Pineapple" id="abtImg" ></img>
             Hey, I am Kyzyl Monteiro, a student HCI researcher at <a class="hlink" href="http://weave.iiitd.edu.in/" target="_blank" rel="noreferrer">Weave Lab, IIIT Delhi</a>. I am interested in creative technology, especially in studying, 
             designing, and developing interactive and immersive technology. I am currently pursuing a Dual Degree course at <a class="hlink" href="https://www.iiitd.ac.in" target="_blank" rel="noreferrer">IIIT Delhi</a>, Bachelors, and Masters in  <a class="hlink" href="https://www.iiitd.ac.in/academics/btech/csd" target="_blank" rel="noreferrer">Computer Science and Design</a>. At Weave Lab, I worked on my bachelor's thesis under <a class="hlink" href="https://amanparnami.com/" target="_blank" rel="noreferrer"> Dr. Aman Parnami </a>, studying how video streaming platforms keep us hooked. 
-            Currently, I am studying Remote collaboration in Mixed Reality for my next project. I am also experimenting with AR development in Unity 
+            Currently, I am studying Collaboration in Mixed Reality for my next project. I am also experimenting with AR development in Unity 
             and interactive 3D graphics on the web.
             </div>
            
