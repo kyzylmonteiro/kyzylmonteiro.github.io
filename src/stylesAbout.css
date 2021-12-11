@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Jura&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
 /* @import 'node_modules/react-modal-video/scss/modal-video.scss'; */
 .App {
-    font-family: 'Krona One', serif;
+    /* font-family: 'Krona One', serif; */
     font-family: 'Jura', sans-serif;
     text-align: center;
   }
@@ -10,7 +11,7 @@
     margin: 0;
     padding: 0;
     background: white;
-    overflow-y: scroll;
+    overflow: hidden;
     --secondary: rgb(161, 161, 161);
     --divider: #343434;
     font-family: 'Jura', sans-serif;

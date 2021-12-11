@@ -22,7 +22,7 @@ function Swarm({ count, mouse }) {
         const speed = 0.01 + Math.random() / 20
         const xFactor = -135 + Math.random() * 270
         const yFactor = -70 + Math.random() * 140
-        const zFactor = -40 + Math.random() * 80
+        const zFactor = -15 + Math.random() * 80
         const sthx = Math.random();
         const sthy = Math.random();
         const ampx = Math.random();

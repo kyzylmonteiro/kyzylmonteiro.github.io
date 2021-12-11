@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
 * {
 box-sizing: border-box;
 }
@@ -68,7 +69,8 @@ background: #f0f0f0;
         padding-top: 45vh;
         padding-left: 5vh;
         position: relative;
-        font-family: 'Krona One', sans-serif;
+        /* font-family: 'Krona One', sans-serif; */
+        font-family: 'Jura', sans-serif;
         font-size: 50px;
         color: #343434;
         text-align: center;
@@ -95,6 +97,7 @@ background: #f0f0f0;
       backdrop-filter: blur( 9.0px );
       -webkit-backdrop-filter: blur( 9.0px );
       color: #343434;
+      padding-top: 15px;
       margin: 10px;
       pointer-events: all;
       cursor: inherit;
@@ -104,7 +107,9 @@ background: #f0f0f0;
         background: rgba( 255, 255, 255, 0.75 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
         color:#343434;
+        padding-top: 15px;
         margin: 10px;
+        padding-top: 15px;
         pointer-events: all;
         cursor: inherit ;
       }
@@ -122,47 +127,71 @@ background: #f0f0f0;
     }
   }
   
+
+
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 600px) {
     #name{
-        margin-top: 30vh;
-        margin-left: 5vh;
-        position: relative;
-        font-family: 'Krona One', sans-serif;
-        font-size: 10vw;
-        color: #343434;
-        text-align: left;
-        font-weight: bold;
-    }
-    #name #tag{
-        font-size: 7vw;
-        line-height: 160%;
-        font-weight: normal;
-        font-family: 'Krona One', sans-serif;
-    }
-    #nxtbutton{
-        margin-top: 30vh;
-        pointer-events: all;
-        cursor: inherit ;
-        bottom: 5vh;
-        right: 5%;
-    }
+      padding-top: 20vh;
+      padding-left: 5vh;
+      padding-right: 5vh;
+      position: relative;
+      /* font-family: 'Krona One', sans-serif; */
+      font-family: 'Jura', sans-serif;
+      font-size: 35px;
+      color: #343434;
+      text-align: center;
+      font-weight: bold;
+  }
+  #name #tag{
+    padding-bottom: 2vh;
+      font-size: 25px;
+      line-height: 160%;
+      text-align: left ;
+      font-weight: normal;
+      font-family: 'Jura', sans-serif;
+  }
+  #nxtbutton{
+      margin-top: 20vh;
+      pointer-events: all;
+      cursor: inherit ;
+      bottom: 5vh;
+      left: 50%;
+  }
 
+  #contactButton{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    color: #343434;
+    padding-top: 15px;
+    margin: 10px;
+    pointer-events: all;
+    cursor: inherit;
+  }
+  @-moz-document url-prefix(){
     #contactButton{
-      background: rgba( 255, 255, 255, 0.15 );
+      background: rgba( 255, 255, 255, 0.75 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
-      backdrop-filter: blur( 9.0px );
-      -webkit-backdrop-filter: blur( 9.0px );
       color:#343434;
       margin: 10px;
+      padding-top: 15px;
       pointer-events: all;
       cursor: inherit ;
     }
-    
-    #projects{
-        height: 30vh;
-        z-index: 10;
-    }
+  }
+  
+  #projects{
+      z-index: 10;
+      width: 80%;
+      margin: auto;
+  }
+  #projectsContainer{
+      max-width: 990px;
+      flex: 1 1 100%;
+      padding: 45px 25px;
+  }
   }
 
 

@@ -29,7 +29,8 @@
     "react-three-fiber": "^5.3.18",
     "react-use-measure": "^2.0.3",
     "three": "^0.125.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.17"
   },
   "scripts": {
     "start": "react-scripts start",
